@@ -40,6 +40,27 @@
         transform: translateY(0);
       }
     }
+
+    /* Añadimos estilos para hacer los botones responsivos */
+    .btn {
+      width: 12em;
+      height: 12em;
+    }
+
+    /* Media query para pantallas más pequeñas */
+    @media (max-width: 576px) {
+      .login-container {
+        width: 90%;
+        height: auto;
+        max-width: 400px;
+      }
+      .btn {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin-bottom: 1em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -54,12 +75,12 @@
           </div>
           <div class="row justify-content-center">
             <div class="col">
-              <button type="submit" class="btn" style="width: 12em; height: 12em; background-color: #2f406a;">
+              <button type="submit" class="btn" style="background-color: #2f406a;">
                 <a style="display: block; color: #ffffff; text-decoration: none; text-align: center; line-height: 12em;" href="Iniciosession.html">Admin</a>
               </button>
             </div>
             <div class="col">
-              <button type="submit" class="btn" style="width: 12em; height: 12em; background-color: #6b1a0c;;">
+              <button type="submit" class="btn" style="background-color: #6b1a0c;">
                 <a style="display: block; color: #ffffff; text-decoration: none; text-align: center; line-height: 12em;" href="contenido.html">Usuario</a>
               </button>
             </div>
